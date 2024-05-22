@@ -6,3 +6,4 @@ Proyecto inicial para revisar temas iniciales de React
 - Hooks
 - Creacion de componentes
 - Props
+- Eventos
