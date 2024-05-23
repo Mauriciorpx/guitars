@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Guitar = ({guitar, setCart}) => {
+const Guitar = ({guitar, addToCart}) => {
 
     const {id, name, image, description, price} = guitar
 
@@ -16,7 +16,7 @@ const Guitar = ({guitar, setCart}) => {
                     <p>{description}</p>
                     <p className="fw-black text-primary fs-3">${price}</p>
                     <button 
-                        onClick={()=>setCart((prevCart)=>[...prevCart, guitar])}
+                        onClick={()=>addToCart(guitar)}
                         type="button"
                         className="btn btn-dark w-100"
                     >Agregar al Carrito</button>
